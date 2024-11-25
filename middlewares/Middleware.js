@@ -8,7 +8,7 @@ const configureMiddlewares = (app) => {
   app.use(express.json()); // Parse JSON request bodies
   app.use(
     cors({
-      origin: "https://onli-heroes-fe.vercel.app", //["https://onliheroes.netlify.app", "http://localhost:5173"]
+      origin: "*", //["https://onliheroes.netlify.app", "https://onli-heroes-fe.vercel.app", "http://localhost:5173"]
       methods: ["GET", "POST", "PUT", "DELETE"],
     })
   ); // Enable CORS
