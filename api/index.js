@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const configureMiddlewares = require("./middlewares/Middleware");
+const configureMiddlewares = require("../middlewares/Middleware");
 require("dotenv").config(); // Load environment variables
 
 const app = express();
